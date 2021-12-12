@@ -35,6 +35,12 @@ export class GuiModel {
                             "required": true
                         },
                         {
+                            "id": "birthdate",
+                            "type": "date",
+                            "name": "Birthday",
+                            "width": 2 
+                        },
+                        {
                             "id":   "location",
                             "type": "autocomplete",
                             "name": "Location",
@@ -43,9 +49,11 @@ export class GuiModel {
                             "width": 2
                         },
                         {
-                            "id": "birthdate",
-                            "type": "date",
-                            "name": "Birthday",
+                            "id": "group",
+                            "type": "autocomplete",
+                            "name": "Group",
+                            "url": "/group",
+                            "form": "GroupForm",
                             "width": 2
                         },
                         {
@@ -67,7 +75,8 @@ export class GuiModel {
                         {
                             "type": "okButton",
                             "name": "Ok"
-                        }
+                        },
+
                     ]
                 },
                 {
