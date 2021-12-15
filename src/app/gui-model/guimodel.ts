@@ -6,12 +6,12 @@ export class GuiModel {
 
     private _guiModel = {
         "application": {
-            "title": "The ultimate friend tracker",
+            "title": "The ultimate friend tracker 3000",
             "formList": [
                 {
                     "id": "FriendForm",
                     "title": "Friend",
-                    "url": "/friend",
+                    "url": "/friend/editFriend",
                     "formFieldList": [
                         {
                             "id": "familyName",
@@ -134,6 +134,7 @@ export class GuiModel {
                         }
                     ]
                 },
+                
                 {
                     "id": "GroupForm",
                     "title": "Group",
@@ -143,6 +144,33 @@ export class GuiModel {
                     "id": "name",
                     "type": "text",
                     "name": "GroupName",
+                    "width": 2,
+                    "required": true
+                    },
+                    {
+                    "type": "deleteButton",
+                    "name": "Delete"
+                    },
+                    {
+                    "type": "cancelButton",
+                    "name": "Cancel"
+                    },
+                    {
+                    "type": "okButton",
+                    "name": "Ok"
+                    }
+                    ]
+                    
+                   },
+                   {
+                    "id": "ActivityForm",
+                    "title": "Activities",
+                    "url": "/Activities",
+                    "formFieldList": [
+                    {
+                    "id": "name",
+                    "type": "text",
+                    "name": "ActivityName",
                     "width": 2,
                     "required": true
                     },
@@ -188,6 +216,13 @@ export class GuiModel {
                             "color": "wisteria",
                             "page": "groupspage",
                         },
+                        {
+                            "type": "button",
+                            "name": "Activities",
+                            "icon": "fa-weixin",
+                            "color": "orange",
+                            "page": "groupspage",
+                    },
                     ]
                 },
                 {
