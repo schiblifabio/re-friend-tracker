@@ -345,7 +345,37 @@ export class GuiModel {
                         
                     
                     ]
-                   }                   
+                   },
+                   
+                   {
+                    "id": "Activitiespage",
+                    "elementList": [
+                    {
+                    "type": "backbutton",
+                    },
+                    {
+                    "type": "newButton",
+                    "name": "NewGroup",
+                    "icon": "fa-weixin",
+                    "color": "green",
+                    "form": {
+                    "form": "ActivityForm"
+                    }
+                    },
+                    {
+                        "type": "list",
+                        "icon": "fa-weixin",
+                        "color": "wisteria",
+                        "search": true,
+                        "url": "/activities",
+                        "form": {
+                        "form": "ActivityForm"
+                        }
+                        },
+                        
+                    
+                    ]
+                   }, 
             ]
         }
     };
